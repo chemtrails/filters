@@ -1,0 +1,82 @@
+#__main_container__ {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    backdrop-filter: blur(7px) brightness(50%);
+    border: 2px solid black;
+    z-index: 10000;
+    margin: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: white;
+    flex-direction: column;
+    user-select: none;
+    display: none;
+}
+
+.__input_container__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 200px;
+}
+
+#__close_btn__ {
+    background: #f75d55;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#__close_btn__>div {
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+}
+
+#__buttons_container__ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    backdrop-filter: brightness(50%);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#__glob_btn__,
+#__reset_btn__ {
+    width: 18px;
+    height: 18px;
+}
+
+#__glob_btn__,
+#__close_btn__,
+#__reset_btn__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.8;
+    box-sizing: border-box;
+    filter: none;
+}
+
+#__glob_btn__:hover,
+#__close_btn__:hover,
+#__reset_btn__:hover {
+    opacity: 1;
+}
